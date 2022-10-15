@@ -1,6 +1,6 @@
 FROM --platform=$BUILDPLATFORM debian:bullseye-slim as build
 
-LABEL maintainer="Michael.Kahn@cuanschutz.edu (from jacob.alberty@foundigital.com)"
+LABEL maintainer="michael.kahn@cuanschutz.edu"
 
 ARG TARGETPLATFORM
 ARG BUILDPLATFORM

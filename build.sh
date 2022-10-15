@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -e
+set +x
+
 declare -A DEBARCHS=( ["linux/arm64"]="arm64" ["linux/arm/v7"]="armhf" ["linux/amd64"]="amd64" )
 declare -A CONFARCHS=( ["linux/arm64"]="aarch64-unknown-linux-gnu" ["linux/arm/v7"]="arm-linux-gnueabihf" ["linux/amd64"]="x86_64-linux-gnu" )
 declare -A PREFARCHS=( ["linux/arm64"]="aarch64-linux-gnu" ["linux/arm/v7"]="arm-linux-gnueabihf" ["linux/amd64"]="x86_64-linux-gnu" )
