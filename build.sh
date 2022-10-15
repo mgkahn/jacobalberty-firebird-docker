@@ -18,6 +18,7 @@ apt-get install -qy --no-install-recommends \
     procps
 
 apt-get install -qy --no-install-recommends \
+    bzip2 \
     ca-certificates \
     curl \
     g++ \
@@ -38,9 +39,9 @@ if [ -d "/home/fixes/pre_fetch/all" ]; then
 fi
 mkdir -p /home/firebird
 cd /home/firebird
-curl -L -o firebird-source.tar.xz -L \
+curl -L -o firebird-source.tar.bz2 -L \
     "${FBURL}"
-tar --strip=1 -xf firebird-source.tar.xz
+tar --strip=1 -xf firebird-source.tar.bz2
 if [ -d "/home/fixes/pre_build/${DEBARCH}" ]; then
     find "/home/fixes/pre_build/${DEBARCH}" -type f -exec '{}' \;
 fi

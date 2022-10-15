@@ -1,6 +1,6 @@
 FROM --platform=$BUILDPLATFORM debian:bullseye-slim as build
 
-LABEL maintainer="jacob.alberty@foundigital.com"
+LABEL maintainer="Michael.Kahn@cuanschutz.edu (from jacob.alberty@foundigital.com)"
 
 ARG TARGETPLATFORM
 ARG BUILDPLATFORM
@@ -8,7 +8,7 @@ ARG BUILDPLATFORM
 ENV PREFIX=/usr/local/firebird
 ENV VOLUME=/firebird
 ENV DEBIAN_FRONTEND noninteractive
-ENV FBURL=https://github.com/FirebirdSQL/firebird/releases/download/v4.0.2/Firebird-4.0.2.2816-0.tar.xz
+ENV ENV FBURL=https://github.com/FirebirdSQL/firebird/releases/download/v3.0.10/Firebird-3.0.10.33601-0.tar.bz2
 ENV DBPATH=/firebird/data
 
 COPY fixes /home/fixes
