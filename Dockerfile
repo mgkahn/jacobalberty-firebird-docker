@@ -8,8 +8,9 @@ ARG BUILDPLATFORM
 ENV PREFIX=/usr/local/firebird
 ENV VOLUME=/firebird
 ENV DEBIAN_FRONTEND noninteractive
-ENV ENV FBURL=https://github.com/FirebirdSQL/firebird/releases/download/v3.0.10/Firebird-3.0.10.33601-0.tar.bz2
+ENV FBURL=https://github.com/FirebirdSQL/firebird/releases/download/v3.0.10/Firebird-3.0.10.33601-0.tar.bz2
 ENV DBPATH=/firebird/data
+
 
 COPY fixes /home/fixes
 RUN chmod -R +x /home/fixes

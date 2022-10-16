@@ -1,0 +1,8 @@
+.DS_Store
+**/*.DS_Store
+**/*code-workspace
+web/yarn.lock.orig
+web/node_modules
+tests/EssaiSwing.class
+**/*DbSchema_linux*.deb
+**/*javafx*aarch64.jar

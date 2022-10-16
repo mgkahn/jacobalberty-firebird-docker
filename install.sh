@@ -30,7 +30,7 @@ rm -rf /var/lib/apt/lists/*
 mkdir -p "${PREFIX}/skel/"
 
 # This allows us to initialize a random value for sysdba password
-mv "${VOLUME}/system/security4.fdb" "${PREFIX}/skel/security4.fdb"
+mv "${VOLUME}/system/security3.fdb" "${PREFIX}/skel/security3.fdb"
 
 # Cleaning up to restrict access to specific path and allow changing that path easily to
 # something standard. See github issue https://github.com/jacobalberty/firebird-docker/issues/12
