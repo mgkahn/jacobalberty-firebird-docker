@@ -1,4 +1,4 @@
-.PHONY: build manifest buildfat check run debug push save clean clobber
+.PHONY: buildx manifest buildfat check run debug push save clean clobber
 
 # Default values for variables
 REPO  ?= mgkahn/
@@ -13,7 +13,7 @@ PLATFORMS := $$(first="True"; for a in $(ARCHS); do if [[ $$first == "True" ]]; 
 
 
 # Rebuild the container image and remove intermediary images
-build: $(templates)
+buildx: $(templates)
 	docker buildx build --push --platform ${PLATFORMS} --tag ${REPO}/${NAME}:${TAG} .
 	@danglingimages=$$(docker images --filter "dangling=true" -q); \
 	if [[ $$danglingimages != "" ]]; then \
