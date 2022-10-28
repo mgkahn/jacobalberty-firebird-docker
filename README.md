@@ -1,5 +1,8 @@
 # docker Firebird
 
+## This branch creates multiarch versions of FB 3.0.10 based on code from FB 4.0.2 branch. Jacob's repo does not create multi-arch for FB 3.x series.
+
+
 ## Supported tags and respective `Dockerfile` links
 
 [`2.5-sc`, `v2.5.9-sc` (*2.5-sc/Dockerfile*)](https://github.com/jacobalberty/firebird-docker/blob/2.5-sc/Dockerfile)
